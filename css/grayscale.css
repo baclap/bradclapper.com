@@ -426,6 +426,9 @@ footer {
 footer p {
   margin: 0;
 }
+footer .fine-print {
+  font-size: 10px;
+}
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;

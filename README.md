@@ -1,1 +1,1 @@
-[BradClapper.com](http://bradclapper.com) is a single page portfolio website. This website was based on the [Grayscale Bootstrap](http://startbootstrap.com/template-overviews/grayscale/) theme created by [Start Bootstrap](http://startbootstrap.com/).
+[BradClapper.com](http://bradclapper.com) is a single page portfolio website. This website was based on the [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) Bootstrap theme created by [Start Bootstrap](http://startbootstrap.com/).

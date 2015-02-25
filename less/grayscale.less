@@ -33,7 +33,7 @@ p {
     line-height: 1.5;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
@@ -102,7 +102,7 @@ a {
     }
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .navbar {
         padding: 20px 0;
         border-bottom: none;
@@ -149,7 +149,7 @@ a {
     }
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .intro {
         height: 100%;
         .intro-body {
@@ -292,7 +292,7 @@ a {
 	}
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .about-section {
         padding: 100px 0;
     }
@@ -379,31 +379,35 @@ ul.list-inline {
 
 .video-thumbnail {
 	position:relative;
-}
 
-.video-thumbnail img {
-	position:relative;
-	z-index:2;
-	width: 275px;
-	height: 155px;
-	opacity:1;
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-	&:focus,
-	&:hover {
-		opacity:.4;
-	}
-}
+    img {
+        position:relative;
+        z-index:2;
+        width: 275px;
+        height: 155px;
+        opacity:1;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+        &:focus,
+        &:hover {
+            opacity:.4;
+        }
+        &.coming-soon:focus,
+        &.coming-soon:hover {
+            opacity:1;
+        }
+    }
 
-.video-thumbnail i {
-	font-size:40px;
-	position:absolute;
-	z-index:1;
-	top:50%;
-	left:50%;
-	margin-top:-.5em;
-	margin-left:-.5em;
+    i {
+        font-size:40px;
+        position:absolute;
+        z-index:1;
+        top:50%;
+        left:50%;
+        margin-top:-.5em;
+        margin-left:-.5em;
+    }
 }
 
 .video-details h3 {
@@ -510,4 +514,11 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: fade(@light, 20%);
+}
+
+/* Bump down play button since we've hidden the AB logo */
+@media(min-width:768px) {
+    .launch-video {
+        margin-top: 120px;
+    }
 }

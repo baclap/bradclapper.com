@@ -170,8 +170,32 @@ a {
 }
 
 .splash-play-icon {
-	position: relative;
-	left: 5px;
+	// position: relative;
+	// left: 5px;
+    font-size: 80px;
+    color: @light;
+    opacity: .65;
+
+    &.animated {
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 1s;
+        -moz-transition-property: all;
+        -moz-transition-duration: 1s;
+    }
+    &:hover {
+        opacity: 1;
+
+        &.animated {
+            -webkit-animation-name: pulse;
+            -moz-animation-name: pulse;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            -moz-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+        }
+    }
 }
 
 .btn-circle {

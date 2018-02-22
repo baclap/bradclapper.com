@@ -204,7 +204,7 @@
     <!-- Footer -->
     <footer>
         <div class="container content-section text-center">
-            <p>&copy; 2015</p>
+            <p id="copyright-text">&copy;</p>
             <p class="fine-print">Webpage created by <a href="http://brettclapper.com">Brett Clapper</a> - <a href="https://github.com/baclap/bradclapper.com">View Code</a></p>
         </div>
     </footer>
@@ -247,6 +247,8 @@
     		$videoEmbed.attr("src", "blank.html");
     		return false;
     	});
+
+        $('#copyright-text').html('&copy; ' + new Date().getFullYear());
     });
     </script>
 

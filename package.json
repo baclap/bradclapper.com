@@ -1,0 +1,25 @@
+{
+  "name": "bradclapper.com",
+  "version": "1.0.0",
+  "description": "[BradClapper.com](http://bradclapper.com) is a single page portfolio website. This website was based on the [Grayscale](http://startbootstrap.com/template-overviews/grayscale/) Bootstrap theme created by [Start Bootstrap](http://startbootstrap.com/).",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "lessc ./less/grayscale.less ./css/grayscale.css; cleancss -o ./css/grayscale.min.css ./css/grayscale.css",
+    "serve": "static-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baclap/bradclapper.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baclap/bradclapper.com/issues"
+  },
+  "homepage": "https://github.com/baclap/bradclapper.com#readme",
+  "dependencies": {
+    "clean-css-cli": "^4.3.0",
+    "less": "^3.10.3",
+    "static-server": "^2.2.1"
+  }
+}
